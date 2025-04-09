@@ -1,0 +1,33 @@
+import java.util.*;
+ class Main
+ {
+     public static void main(String args[])
+     {
+         
+         int n = 4;
+         TreeSet<Integer> tree = new TreeSet<>();
+         
+         int arr[] = {5,4,3,2,1,1};
+        
+        
+        for(int  num : arr)
+        {
+            tree.add(num);
+        }
+         
+    List<Integer> list = new ArrayList<>(tree);
+    
+    if(n<=list.size())
+    {
+        System.out.print(list.get(list.size()-n));
+        
+    }
+    else
+    {
+        System.out.print("error");
+    }
+    
+    
+     }
+     }
+ 
