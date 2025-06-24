@@ -1,0 +1,53 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+        int ipt =12345;
+        
+        if(ipt%2==0)
+        {
+            int num =ipt;
+            int fin =0;
+            while(num>0)
+            {
+                int mod = num%10;
+                fin =fin*10+mod;
+                num = num/10;
+                
+            }
+            System.out.print(fin);
+            
+        }
+        else
+        {
+             String vlu = String.valueOf(ipt);
+             int len =0;
+             for(char c:vlu.toCharArray())
+             {
+                 len++;
+             }
+             String arr[] = new String[len];
+             int snt=0;
+             for(char c:vlu.toCharArray())
+             {
+                 String hit = String.valueOf(c);
+                 arr[snt++]=hit;
+             }
+            String fst = arr[0];
+             arr[0]= arr[arr.length-1];
+             arr[arr.length-1] = fst;
+             
+             for(String v:arr)
+             {
+                 System.out.print(v+" ");
+             }
+             
+             
+             
+             
+             
+            
+        }
+    }
+}
