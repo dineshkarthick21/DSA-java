@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class String_swap {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String s1= sc.nextLine();
+		char[]a = s1.toCharArray();
+		int i=0, j = s1.length()-1;
+		
+		while(i<j) {
+			a[i] ^= a[j];
+			a[j] ^= a[i];
+			a[i] ^= a[j];
+			i++;
+			j--;
+		}
+		System.out.println(new String(a));
+	}
+}
