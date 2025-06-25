@@ -1,0 +1,39 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+        String ipt ="HelloWorld";
+        char[] arr = ipt.toCharArray();
+        
+        // for(int i=0;i<ipt.length();i++)
+        // {
+            
+        // }
+        int i =0;
+        int  j =ipt.length()-1;
+        
+        while(i<j)
+        {
+            char temp =arr[i];
+            arr[i] = arr[j];
+            arr[j]=temp;
+            i++;
+            j--;
+        }
+        //System.out.print(Arrays.toString(arr));
+        // for(char a:arr)
+        // {
+        //     System.out.print(a);
+        // }
+        int snt =0;
+        int lst =ipt.length()-1;
+        while(snt<=lst)
+        {
+            System.out.print(arr[snt]);
+            snt++;
+        }
+        
+        
+    }
+}
