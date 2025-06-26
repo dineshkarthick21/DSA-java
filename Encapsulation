@@ -1,0 +1,34 @@
+package datastructure;
+
+
+class Ninbr
+{
+	private void hit()//encpsulation performed on this line
+	{
+		//Ninbr();
+		System.out.println("car engine started..");
+	}
+	 Ninbr()
+	{
+		 
+		System.out.println("driver");
+		hit();
+	}
+	
+	void bin()
+	{
+		//hit();
+		System.out.println("car moving...");
+	}
+}
+
+public class Encapsul {
+	public static void main(String args[])
+	{
+		Ninbr nin = new Ninbr();
+		nin.bin();
+//		nin.Ninbr();
+	
+	}
+
+}
