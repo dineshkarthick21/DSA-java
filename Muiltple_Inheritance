@@ -1,0 +1,54 @@
+package datastructure;
+
+class Grand
+{
+	
+	int age;
+	String name;
+	void g()
+	{
+		System.out.println("hari saravanaa");
+	}
+}
+class Appa extends Grand
+{
+	void hit()
+	{
+		System.out.println("grand is calling..");
+	}
+	void chin()
+	{
+		System.out.println("Appa call the son..");
+	}
+}
+
+class Son extends Appa
+{
+	void sym()
+	{
+	System.out.println(age);
+	}
+	void string()
+	{
+		System.out.println(name);
+	}
+}
+
+public class Multi_Inheritance {
+	public static void main(String args[])
+	{
+		Son son  = new Son();
+		son.g();
+//		son.hit();
+//		son.age = 20;
+//		son.sym();
+//		son.chin();
+//		son.name="dinesh";
+//		son.string();
+//		Appa appa = new Appa();
+		
+		
+		
+	}
+
+}
