@@ -1,0 +1,29 @@
+package errormakesclever;
+
+class Item
+{
+	void kind()
+	{
+		System.out.println("iam dinesh");
+	}
+	void kind(int num)
+	{
+		System.out.println("iam karthick");
+	}
+	void kind(int num ,String a)
+	{
+		System.out.println("Hari saravanaa..");
+	}
+	
+}
+
+public class Polymorphism_prblm {
+	public static void main(String args[])
+	{
+		Item i = new Item();
+		i.kind(20,"d");
+	}
+	
+	
+
+}
