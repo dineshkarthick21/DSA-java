@@ -1,0 +1,38 @@
+package emclearning;
+import java.util.*;
+interface Teacher
+	{
+		void ksrian();
+		
+	}
+	interface Student
+	{
+		void village();
+	}
+
+	class Mandatory implements Teacher,Student
+	{
+		public void ksrian() {
+			System.out.println("iam from KSRCT");
+		}
+		public void village()
+		{
+			System.out.println("iam from vanavasi");
+		}
+		
+	}
+
+	public class Multiple_inheriatnce {
+		public static void main(String args[])
+		{
+			Mandatory man = new Mandatory();
+			man.ksrian();
+			man.village();		
+		}
+
+	}
+
+
+
+
+
