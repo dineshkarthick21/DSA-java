@@ -1,0 +1,46 @@
+package datastructure;
+
+
+class College_members
+{
+	
+	void College()
+	{
+		System.out.println("Member of KSR");
+	}
+	
+}
+class student extends College_members
+{
+	
+	void std()
+	{
+		System.out.println("student..");
+		College();
+	}
+	
+}
+class faculty extends College_members
+{
+	void flty()
+	{
+		System.out.println("faculty..");
+		College();
+
+	}
+
+}
+
+public class Hierachical_inheritance {
+	
+	public static void main(String args[])
+	{
+		faculty f = new faculty();
+		student s = new student();
+		f.flty();
+		s.std();
+		
+		
+	}
+
+}
