@@ -1,0 +1,27 @@
+package errormakesclever;
+
+class G
+{
+	void fin()
+	{
+		System.out.print(true);
+	}
+}
+class H extends G
+{
+	void fin(int s)
+	{
+		System.out.print(false);
+		
+	}
+	
+}
+
+public class Overriding_poly {
+	public static void main(String args[])
+	{
+		H h = new H();
+		h.fin(20);
+	}
+
+}
