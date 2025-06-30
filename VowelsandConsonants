@@ -1,0 +1,53 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner scan = new Scanner(System.in);
+        String m =scan.nextLine();
+       // String s =m.toLowerCase();
+       int bin =0;
+       
+       for(char a:m.toCharArray())
+       {
+           if(Character.isLetter(a))
+           {
+               continue;
+           }
+           else
+           {
+               bin++;
+               
+           }
+       }
+       if(bin==0)
+       {
+        int  count=0;
+        String fin ="";
+        for(char c:m.toCharArray())
+        {
+            
+            if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u')
+            {
+                if(Character.isLowerCase(c))
+                {
+                    count++;
+                    
+                }
+                
+            }
+            else if(Character.isLowerCase(c))
+            {
+               fin+=c;
+            }
+        }
+        System.out.println("No of Vowels : "+count);
+        System.out.println("Consonants : "+fin);
+       }
+       
+       else
+       {
+           System.out.print("Invalid Input");
+       }
+    }
+}
