@@ -1,0 +1,34 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+        int arr[] = {10, 22, 12, 3, 0, 6};
+        int n=arr.length;
+        if(arr.length>1)
+        {
+            for(int i=0;i<n-1;i++)
+            {
+                int  count=0;
+                for(int j=i+1;j<n;j++)
+                {
+                    if(arr[i]>arr[j])
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        count++;
+                        break;
+                    }
+                }
+                if(count==0)
+                {
+                    System.out.print(arr[i]+" ");
+                }
+            }
+            System.out.print(arr[arr.length-1]);
+            
+        }
+    }
+}
