@@ -27,16 +27,13 @@ public class Main
         for(char c:m.toCharArray())
         {
             
-            if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u')
+            if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'||c=='U')
             {
-                if(Character.isLowerCase(c))
-                {
-                    count++;
-                    
-                }
                 
+                    count++;
+            
             }
-            else if(Character.isLowerCase(c))
+            else 
             {
                fin+=c;
             }
