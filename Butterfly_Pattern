@@ -1,0 +1,51 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+        int  n=10;
+        int tp=2;
+        for(int i=1;i<=10-6;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print("*");
+            }
+            
+            for(int j=1;j<=n-tp;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int k=1;k<=i;k++)
+            {
+                System.out.print("*");
+                
+            }
+            tp+=2;
+            System.out.println();
+        }
+        for(int q=1;q<=10;q++)
+        {
+            System.out.print("*");
+        }
+        System.out.println();
+        int  tr=2;
+        for(int e=1;e<=10-6;e++)
+        {
+            for(int r=e;r<=10-6;r++)
+            {
+                System.out.print("*");
+            }
+            for(int t=1;t<=tr;t++)
+            {
+                System.out.print(" ");
+            }
+            for( int y=e;y<=10-6;y++)
+            {
+                System.out.print("*");
+            }
+            tr+=2;
+            System.out.println();
+        }
+    }
+}
